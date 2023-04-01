@@ -2,8 +2,11 @@ import React, { useState, useEffect } from "react";
 import './SideCard.css'
 
 
+
+
 const SideCard = ({ readTime, bookmarks }) => {
-    // console.log(bookmarks);
+    console.log(bookmarks);
+    
   const [time, setTime] = useState(0);
 
   useEffect(() => {
@@ -19,9 +22,13 @@ const SideCard = ({ readTime, bookmarks }) => {
         </div>
 
         <div className="bg-light p-3">
-          <h4>
-            Bookmarked Blogs: 5
-          </h4>
+          <h4>Bookmarked Blogs: 5</h4>
+          
+            {bookmarks.map((bookmark) => {
+              return <h5 className="bg-light m-2 gap-2">{bookmark.Title}</h5>;
+            //   console.log(bookmark.Title);
+            })}
+         
         </div>
       </div>
     </div>

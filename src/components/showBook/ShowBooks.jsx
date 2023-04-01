@@ -2,12 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark} from "@fortawesome/free-solid-svg-icons";
 import './ShowBook.css'
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ShowBooks = ({ book, handleReadTime }) => {
   const { Title, Author, Author_img, Poster, Reading_time, Publication_date } =
         book;
     
-
+function handleClick() {
+  toast.success("Already Bookmarked!");
+}
+    
     
   return (
     <div className="card w-100 my-2 d-flex ">
@@ -30,7 +35,7 @@ const ShowBooks = ({ book, handleReadTime }) => {
           <div className="reading-time">{Reading_time} min read</div>
           <span>
             <FontAwesomeIcon
-             
+              onClick={handleClick}
               className="cursor"
               icon={faBookmark}
             />
