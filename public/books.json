@@ -1,0 +1,49 @@
+{
+  "Books": [
+    {
+      "Title": "Recharge your down battery",
+      "Author": "Jhankar Mahbub",
+      "Author_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pOXGH-IGY2Jvfb8gMxb88Cg131rOsDX_5lWKcbYS4PmTMVenu4TVg1UmHl5QGKOi5AY&usqp=CAU",
+      "Publication_date": "January 1, 2018",
+      "ISBN": 9789849266365,
+      "Reading_time": "120",
+      "Poster": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/34eff29de_155900.jpg"
+    },
+    {
+      "Title": "Paramay Lifer Paracetamol",
+      "Author": "Jhankar Mahbub",
+      "Author_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pOXGH-IGY2Jvfb8gMxb88Cg131rOsDX_5lWKcbYS4PmTMVenu4TVg1UmHl5QGKOi5AY&usqp=CAU",
+      "Publication_date": "Jan 1, 2019",
+      "ISBN": 9789848040263,
+      "Reading_time": "116",
+      "Poster": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/31SuSyHioUL._SX316_BO1,204,203,200_.jpg"
+    },
+    {
+      "Title": "Hablu der Jnno Programming",
+      "Author": "Jhankar Mahbub",
+      "Author_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pOXGH-IGY2Jvfb8gMxb88Cg131rOsDX_5lWKcbYS4PmTMVenu4TVg1UmHl5QGKOi5AY&usqp=CAU",
+      "Publication_date": 2016,
+      "ISBN": "978-984-92066-3-7",
+      "Reading_time": "120",
+      "Poster": "https://static-01.daraz.com.bd/p/69533e3722bba143bd681da63107cf7d.jpg"
+    },
+    {
+      "Title": "Programming er Chouddogoshthi",
+      "Author": "Jhankar Mahbub",
+      "Author_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pOXGH-IGY2Jvfb8gMxb88Cg131rOsDX_5lWKcbYS4PmTMVenu4TVg1UmHl5QGKOi5AY&usqp=CAU",
+      "Publication_date": "January 1, 2018",
+      "ISBN": 9789849266396,
+      "Reading_time": "181",
+      "Poster": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/f0836d0b7_158227.jpg"
+    },
+    {
+      "Title": "Programming er Bolod to Boss",
+      "Author": "Jhankar Mahbub",
+      "Author_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pOXGH-IGY2Jvfb8gMxb88Cg131rOsDX_5lWKcbYS4PmTMVenu4TVg1UmHl5QGKOi5AY&usqp=CAU",
+      "Publication_date": "February 2017",
+      "ISBN": 9789848040768,
+      "Reading_time": "127",
+      "Poster": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/95512cdf1cf4_128993.jpg"
+    }
+  ]
+}
