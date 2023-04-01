@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './SideCard.css'
+import Bookmark from "../Bookmark/Bookmark";
 
 const SideCard = ({readTime}) => {
    
@@ -21,9 +22,8 @@ const SideCard = ({readTime}) => {
         </div>
 
         <div className="bg-light p-3">
-          <div className="bookmarks">
-            <h4>Bookmarked Blogs : </h4>
-          </div>
+          
+        <Bookmark/>
                   
                   
         </div>
