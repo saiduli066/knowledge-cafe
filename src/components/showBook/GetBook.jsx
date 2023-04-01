@@ -14,13 +14,11 @@ const GetBook = () => {
 
 
     return (
-      
-        <div className="book-container ">
-          {books.map((book) => (
-            <ShowBooks book={book} />
-          ))}
-        </div>
-    
+      <div className="book-container p-1">
+        {books.map((book) => (
+          <ShowBooks book={book} key={book.ISBN} />
+        ))}
+      </div>
     );
 };
 

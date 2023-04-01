@@ -1,0 +1,19 @@
+.Author_img{
+    width: 10%;
+    height: 70%;
+}
+
+.reading-time{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.6);;
+    }
+
+.cursor{
+    cursor: pointer;
+}
+
+.mark-as-read{
+cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.total-reading-time{
+    background-color: #6047ec1a;
+        border: 1px solid #6047EC;
+        border-radius: 8px;
+        color: #6047EC;
+}
+
+.bookmarks{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
