@@ -33,7 +33,7 @@ function App() {
           <GetBook handleReadTime={handleReadTime} />
         </div>
         <div className="col-md-4 mt-2">
-          <SideCard readTime={readTime}/>
+          <SideCard readTime={readTime} />
         </div>
       </div>
 

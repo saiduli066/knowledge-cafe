@@ -3,7 +3,9 @@ import './SideCard.css'
 
 const SideCard = ({readTime}) => {
    
-    const [time, setTime] = useState(readTime);
+    const [time, setTime] = useState(0);
+
+    const [bookmarked, setBookmarked] = useState([]);
 
     useEffect(() => {
       const getReadTime = localStorage.getItem("readTime");
@@ -20,8 +22,8 @@ const SideCard = ({readTime}) => {
 
         <div className="bg-light p-3">
           <div className="bookmarks">
-            <h4>Bookmarked Blogs : 8</h4>
-                  </div>
+            <h4>Bookmarked Blogs : </h4>
+          </div>
                   
                   
         </div>
