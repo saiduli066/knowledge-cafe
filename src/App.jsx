@@ -2,15 +2,29 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Home from './components/Home/Home'
+import Nav from './components/Nav/Nav'
+import ShowBook from './components/showBook/GetBook'
+import SideCard from './components/SideCard/SideCard'
+import GetBook from './components/showBook/GetBook'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <h2 className='text-success'>Hi ! kddk</h2>
+    <div className="App gap-2">
+      <Nav />
+      <div className="row">
+        <div className="col-md-8">
+          <GetBook />
+        </div>
+        <div className="col-md-4">
+          <SideCard/>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default App
