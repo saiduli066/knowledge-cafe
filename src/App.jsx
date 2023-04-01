@@ -1,14 +1,12 @@
-import { useState } from 'react'
+import React, { useState, useEffect } from "react";
 
-import './App.css'
-import Nav from './components/Nav/Nav'
-import SideCard from './components/SideCard/SideCard'
-import GetBook from './components/showBook/GetBook'
-import Question from './components/Questions/Question'
-
+import "./App.css";
+import Nav from "./components/Nav/Nav";
+import SideCard from "./components/SideCard/SideCard";
+import GetBook from "./components/showBook/GetBook";
+import Question from "./components/Questions/Question";
 
 function App() {
-  
   const [readTime, setReadTime] = useState("");
 
   const handleReadTime = (readTime) => {
@@ -25,6 +23,14 @@ function App() {
     }
   };
 
+  const [bookmarks, setBookmarked] = useState([]);
+
+  useEffect(() => {
+    fetch("books.json")
+      .then((res) => res.json())
+      .then((data) => setBookmarked(data.Books));
+  }, []);
+
   return (
     <div className="App gap-2">
       <Nav />
@@ -32,8 +38,9 @@ function App() {
         <div className="col-md-8">
           <GetBook handleReadTime={handleReadTime} />
         </div>
+
         <div className="col-md-4 mt-2">
-          <SideCard readTime={readTime} />
+          <SideCard bookmarks={bookmarks}/>
         </div>
       </div>
 
@@ -42,4 +49,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from "react";
 import './SideCard.css'
-import Bookmark from "../Bookmark/Bookmark";
 
-const SideCard = ({readTime}) => {
-   
-    const [time, setTime] = useState(0);
 
-    const [bookmarked, setBookmarked] = useState([]);
+const SideCard = ({ readTime, bookmarks }) => {
+    // console.log(bookmarks);
+  const [time, setTime] = useState(0);
 
-    useEffect(() => {
-      const getReadTime = localStorage.getItem("readTime");
-      setTime(getReadTime);
-    }, [readTime]);
-
+  useEffect(() => {
+    const getReadTime = localStorage.getItem("readTime");
+    setTime(getReadTime);
+  }, [readTime]);
 
   return (
     <div>
@@ -22,10 +19,9 @@ const SideCard = ({readTime}) => {
         </div>
 
         <div className="bg-light p-3">
-          
-        <Bookmark/>
-                  
-                  
+          <div className="bookmarks">
+            <h4>Bookmarked Blogs : </h4>
+          </div>
         </div>
       </div>
     </div>
