@@ -19,9 +19,9 @@ const SideCard = ({ readTime, bookmarks }) => {
         </div>
 
         <div className="bg-light p-3">
-          <div className="bookmarks">
-            <h4>Bookmarked Blogs : </h4>
-          </div>
+          <h4>
+            Bookmarked Blogs: 5
+          </h4>
         </div>
       </div>
     </div>

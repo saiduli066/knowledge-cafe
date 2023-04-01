@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark} from "@fortawesome/free-solid-svg-icons";
 import './ShowBook.css'
 
 const ShowBooks = ({ book, handleReadTime }) => {
   const { Title, Author, Author_img, Poster, Reading_time, Publication_date } =
-    book;
+        book;
+    
+
+    
   return (
     <div className="card w-100 my-2 d-flex ">
       <img className="w-25 mx-auto my-2" src={Poster} alt="" />
@@ -26,7 +29,11 @@ const ShowBooks = ({ book, handleReadTime }) => {
         <div className="d-flex gap-2">
           <div className="reading-time">{Reading_time} min read</div>
           <span>
-            <FontAwesomeIcon className="cursor" icon={faBookmark} />
+            <FontAwesomeIcon
+             
+              className="cursor"
+              icon={faBookmark}
+            />
           </span>
         </div>
       </div>
